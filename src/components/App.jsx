@@ -12,12 +12,11 @@ export class App extends React.Component {
     bad: 0,
   };
 
-  fidbackIncrement = e => {
-    const currentButton = e.currentTarget.name;
+  fidbackIncrement = review => {
     this.setState(prevState => {
       return {
         ...prevState,
-        [currentButton]: prevState[currentButton] + 1,
+        [review]: prevState[review] + 1,
       };
     });
   };
